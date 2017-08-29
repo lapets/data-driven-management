@@ -5,17 +5,39 @@ Course notes on data mechanics topics that underlie data-driven decision managem
 
 ### Introduction
 
-*Data* typically refers to a collection of structured or unstructured information. We are concerned primarily with *digital* data, which includes anything from a text file, to a spreadsheet, to an enterprise database.
+*Data* typically refers to a collection of structured, semi-structured, or unstructured information. We are concerned primarily with *digital* data, which includes anything from a text file, to a spreadsheet, to an enterprise database.
 
 The term *metadata* typically refers to information *about* a data set or individual entries in that data set.
 
-### Sources of Data for an Organization
+### Sources of Data in an Organization
+
+Given a business question, what sources of data are available that can help answer it? What sources of data are necessary to answer it? While potential sources of data for business analytics can vary across scenarios, it is possible to build a [taxonomy of common sources](http://cambridgeservicealliance.eng.cam.ac.uk/resources/Downloads/Monthly%20Papers/2014_March_DataDrivenBusinessModels.pdf).
+
+In particular, we are interested in data sets that relate directly or indirectly to some aspect of the organization. These can be broken down in one way as presented below:
+* Internal data sources within the organization
+  * Existing data sets already being generated and/or stored in digital form
+    * Structured data
+    * Semi-structured or unstructured data
+  * Potential assets and business activities within the organization that can be surveyed, measured, and/or tracked to generate new data sets
+    * Tracking information and measurements
+      * Existing assets
+      * Internal events
+      * Interactions with other organizations
+      * External opportunities
+    * Exploratory or diagnostic experiments conducted within the organization
+    * Crowd-sourced data
+* External data sources available from other entities or organizations
+  * Acquired or purchased data sets
+    * Relevant data sets provided by commercial organizations
+  * Data provided by customers
+    * Social networking and social media
+    * Direct communications from customers
+  * Free and open data sources
+    * Relevant data sets provided by government and non-profit organizations
 
 > **Discussion:** Given a description of an organization, generate a list of possible data sets that can be identified or generated.
 
 ### From Assets and Activities to Data
-
-It is important to consider the frequency with which a data set is generated, retrieved, or updated.
 
 > **Case Study**
 
@@ -33,7 +55,7 @@ The *provenance* of a data set or stream (or an item therein) is a record of its
 
 When procuring or generating a data set or implementing a data stream, it is important to consider several logistical issues. The answers to the questions below can be driven by *how* and *by whom* the data will be used.
 
-* What is the expected quantity of data per unit time? What is the cost to store this amount of data?
+* With what frequency will a data set be generated, retrieved, or updated? What is the expected quantity of data per unit time? What is the cost to store this amount of data?
 * Is the data's availability critical? How quickly might it be necessary to obtain a current or past instance of a data set?
 * Is there sufficient storage to store all data, or will some data need to be discarded after a certain period of time?
   * A conservative approach might be to store as much data as the existing storage resources allow.
