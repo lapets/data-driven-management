@@ -12,7 +12,6 @@ The term *metadata* typically refers to information *about* a data set or indivi
 ### Sources of Data for an Organization
 
 
-
 ### From Assets and Activities to Data
 
 It is important to consider the frequency with which a data set is generated, retrieved, or updated.
@@ -59,7 +58,9 @@ A *projection* operation takes a data set and applies some function to every rec
 
 ### Advanced Data Transformations
 
+An *join* operation takes two data sets *A* and *B* and an attribute that appears in both data sets. It then looks through every possible pair of records (one record from *A* and one record from *B*) and keeps only those pairs in which the values for the attributes are the same.
 
+An *aggregation* operation takes a data set, an index attribute, a target attribute, and an operation (such as counting, summation, maximum, and so on). It then separates all records into collections by index. For each collection, it combines the target attribute values in all the records within that collection using the operation (obtaining a single value). It then returns a new data set that maps each unique index attribute value to the corresponding aggregate of target attribute values.
 
 ### Data Cleaning and Normalization
 
