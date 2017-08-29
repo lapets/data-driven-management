@@ -73,7 +73,7 @@ When procuring or generating a data set or implementing a data stream, it is imp
 
 ### Introduction
 
-In this part we formally introduce the building blocks that will allow us to discuss and reason about data sets and transformations on data sets. While different communities may use different sets of terminology to refer to the concepts presented below, the concepts themselves are largely consistent across disciplines. A thorough understanding of the concepts themselves will allow you to navigate any scenario or tool (whether it is Microsoft Excel or a production SQL database) by first identifying the concepts at play and then establishing a mutually agreed-upon terminology with your colleagues or collaborators.
+In this part we formally introduce the building blocks that will allow us to discuss and reason about data sets and transformations on data sets. While different communities may use different sets of [terminology](https://en.wikipedia.org/wiki/Relational_database#Terminology) to refer to the concepts presented below, the concepts themselves are largely consistent across disciplines. A thorough understanding of the concepts themselves will allow you to navigate any scenario or tool (whether it is Microsoft Excel or a production SQL database) by first identifying the concepts at play and then establishing a mutually agreed-upon terminology with your colleagues or collaborators.
 
 ### Data Schemas and Data Sets
 
