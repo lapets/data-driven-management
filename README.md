@@ -39,15 +39,23 @@ When procuring or generating a data set or implementing a data stream, it is imp
 
 ### Introduction
 
-
+In this part we formally introduce the building blocks that will allow us to discuss and reason about data sets and transformations on data sets. While different communities may use different sets of terminology to refer to the concepts presented below, the concepts themselves are largely consistent across disciplines. A thorough understanding of the concepts themselves will allow you to navigate any scenario or tool (whether it is Microsoft Excel or a production SQL database) by first identifying the concepts at play and then establishing a mutually agreed-upon terminology with your colleagues or collaborators.
 
 ### Data Schemas and Data Sets
 
+A *dimension* is some mathematical object. Examples of sets include the non-negative integers (i.e., `{0, 1, 2, 3, ...}`), the set of all strings (i.e., `{"a", "b", "c", "ab", "ac", "cb", ...}`) and so on.
 
+A *record* is a mapping from a set of *attributes* (typically strings) to *values* drawn from some set. One example is `{"name": "Alice", "age": 25}`.
+
+A *data set* is an unordered collection of records. A data set could be viewed/treated as a table within a data base (e.g., see [attribute-value system](https://en.wikipedia.org/wiki/Attribute-value_system)).
 
 ### Common Data Transformations
 
+In general, any algorithms that operates on an input data set and produces an output data set is a data transformation. However, we can identify a variety of simple data transformations that occur frequently and can act as basic building blocks for more complex transformations. By referring to these buildling blocks we can (1) reuse common transformations and compose them to build larger ones, or (2) we can break down more complex transformations in order to reason about their properties (in terms of performance, provenance, security, and so on).
 
+A *filter* or *selection* operation takes a data set as an input and produces an output that is a subset of that data set.
+
+A *projection* operation takes a data set and applies some function to every record to produce an output data set. This output data set has *the same number of records* as the input data set, though the individual records themselves may have different attributes.
 
 ### Advanced Data Transformations
 
