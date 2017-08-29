@@ -39,6 +39,8 @@ In particular, we are interested in data sets that relate directly or indirectly
 
 ### From Assets and Activities to Data
 
+Once the assets and activities from which we want to derive data have been identified, we need to identify the means and resources available to the organization to collect the desired data sets. It may be the case that additional resources are required to collect the desired data.
+
 > **Case Study**
 
 > **Multiple-Choice:** Answer questions about the case study.
@@ -102,5 +104,11 @@ An *aggregation* operation takes a data set, an index attribute, a target attrib
 > **Exercise (Numerical Input):** Using aggregations and joins to accomplish an analytics task.
 
 ### Data Cleaning and Normalization
+
+#### Data Normalization
+
+#### Joining Data Sets
+
+When joining multiple data sets, two common issues may arise: differences in the schemas and differences in semantics.
 
 > **Peer:** Integrate two or more data sets from different sources (different scales, some missing data).
